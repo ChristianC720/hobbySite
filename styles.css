@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom,#1b1a17, #38322b);
+    color: #fff;
+}
+
+.title{
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Optimus';
+    font-size:100px;
+    text-shadow: 0 0 0.2em DarkOrange, 0 0 0.2em black, 0 0 0.2em DarkOrange;
+    color:white;
+}
+
+.title-min{
+    font-family: 'Optimus';
+    font-size:55px;
+    text-shadow: 0 0 0.2em DarkOrange, 0 0 0.1em black, 0 0 0.2em DarkOrange;
+    color:white;
+}
+
+.content {
+    max-width: 70dvw;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.subtitle-under {
+    font-family: 'Optimus';
+    font-size:30px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #695442;
+  }
+
+  .subtitle-under:after {
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+}
+
+a:link, a:visited {
+    color: #695442;
+    text-decoration: underline;
+    cursor: auto;
+  }
+
+.image-primary {
+    width: 80%;
+    max-height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 1rem 3rem;
+    border: #38322b;
+    box-shadow: 0 0 1em rgb(128, 128, 128), 0 0 0.5em black, 0 0 0.5em rgb(49, 41, 31);
+}
+
+.centered-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background: #1b1a17;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    border: 1px solid #1b1a17;
+}
+
+.images-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.images-box img.w {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    border: 2px solid #38322b;
+}
+
+.images-box img.h {
+    height: 100%;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    border: 2px solid #38322b;
+}
+
+.images-box img:hover {
+    transform: scale(1.05);
+    border: #38322b;
+    box-shadow: 0 0 0.5em DarkOrange, 0 0 0.5em black, 0 0 0.5em DarkOrange;
+}
+
+p {
+    margin: 1rem;
+    font-size: 1.1rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .images-box {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .content {
+        max-width: 100dvw;
+        padding: 1rem;
+    }
+}
